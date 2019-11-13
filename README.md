@@ -1,6 +1,6 @@
-# ImgSynthesis
+# PictureSynthesis
 
-图片合成插件
+a lightweight javacript library for synthesizing pictures
 
 ### Install
 
@@ -9,7 +9,7 @@
 your html
 
 ```html
-<script src="ImgSynthesis.js"></script>
+<script src="PictureSynthesis.js"></script>
 
 ```
 
