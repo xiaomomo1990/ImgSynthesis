@@ -23,14 +23,14 @@ your app.js
 
 ```javascript
 
-import pictureSynthesis from 'picture-synthesis'
+import PictureSynthesis from 'picture-synthesis'
 
 ```
 
 ### Usage
 
 ```javascript
-const ic01 = new ImgCombination({
+const ic01 = new PictureSynthesis({
 	mainImg:{...}
 	elesImg:[...],
 	type:'...'
