@@ -1,0 +1,15 @@
+{
+  "name": "picture-synthesis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ImgSynthesis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "canvas",
+    "picture synthesis"
+  ],
+  "author": "mo",
+  "license": "ISC"
+}

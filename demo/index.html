@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="../ImgSynthesis.js"></script>
+	<script type="text/javascript">
+		const ic01 = new ImgCombination({
+			mainImg:{
+				url:'images/bg.png',
+				w:750,
+				h:1206,
+				// crossOrigin:'anonymous', //设置当前图片可跨域（注：需要配合服务端设置图片可跨域）
+			},
+			elesImg:[
+				{
+					url:'images/fortuneBag.png',
+					w:280,
+					h:280,
+					l:20,
+					t:20,
+					// crossOrigin:'anonymous', // 设置当前图片可跨域（注：需要配合服务端设置图片可跨域）
+				},
+				{
+					url:'images/kettle.png',
+					w:78,
+					h:91,
+					l:380,
+					t:380,
+					// crossOrigin:'anonymous', // 设置当前图片可跨域（注：需要配合服务端设置图片可跨域）
+				}
+			],
+			type:'image/jpeg'
+		});
+
+		// 获取合成图片的base64位图
+		ic01.getBase64({
+			cb:function(DataUrl){
+				const img = new Image();
+				img.src = DataUrl;
+				document.body.appendChild(img);
+			}
+		});
+
+		// 获取合成图片的file格式图
+		// ic01.getFile({
+		// 	cb:function(file){
+		// 		console.log('file', file);
+		// 	}
+		// });
+
+		// 获取合成图片的blob格式图
+		// ic01.getBlob({
+		// 	cb:function(blob){
+		// 		console.log('blob', file);
+		// 	}
+		// });
+
+		
+	</script>
+</body>
+</html>
