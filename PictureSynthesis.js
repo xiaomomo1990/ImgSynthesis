@@ -1,10 +1,10 @@
 /*
- * ImgSynthesis.js 0.0.1
+ * PictureSynthesis.js 0.0.1
  * 
  */
  (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) : (global.ImgSynthesis = factory());
+    typeof define === 'function' && define.amd ? define(factory) : (global.PictureSynthesis = factory());
 }(this, function(){
 
 	/*
@@ -150,7 +150,7 @@
 	/*
      * 图片合成类
 	 */
-	class ImgSynthesis {
+	class PictureSynthesis {
 		constructor({mainImg = {}, elesImg = [], type = 'image/png'}) {
 			this.options = Object.assign({},{mainImg, elesImg ,type});			
 			if(typeof this.options.mainImg === 'object' && this.options.elesImg instanceof Array) {
@@ -219,6 +219,6 @@
 
 	}
 
-	return ImgSynthesis;
+	return PictureSynthesis;
 
 }));
